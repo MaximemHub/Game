@@ -1,0 +1,23 @@
+.content{
+  background-color: white;
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: 3px 3px 15px gray;
+}
+
+.p1{
+  background-color: rgb(245, 245, 245);
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.p2{
+  background-color:white;
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+}
+
