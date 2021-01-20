@@ -1,0 +1,11 @@
+@import 'content.css';
+@import 'icon.css';
+
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: #ddac51;
+}
+
+

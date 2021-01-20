@@ -8,7 +8,8 @@ const currents2 = document.querySelector('.displaycurrentscore2')
 const score1 = document.querySelector('.score1')
 const score2 = document.querySelector('.score2')
 
-
+const newgame = document.querySelector('.newgame')
+newgame.addEventListener('click', playNewGame)
 const rolldice = document.querySelector('.rolldice')
 rolldice.addEventListener('click', displayRollDice)
 const hold = document.querySelector('.hold')
@@ -22,6 +23,23 @@ let currentscore2 = 0;
 
 let globalscore1 = 0;
 let globalscore2 = 0;
+
+//nouvelle partie
+function playNewGame(){
+  let pressnewgame = true
+  if(pressnewgame){
+    currentscore1 = 0
+  }
+  if(pressnewgame){
+    currentscore2 = 0
+  }
+  if(pressnewgame){
+    globalscore1 = 0
+  }
+  if(pressnewgame){
+    globalscore2 = 0
+  }
+}
 
 //defintion de style pour les current score
 currents1.style.fontSize = "50px"
@@ -46,7 +64,7 @@ function displayRollDice() {
   } else if(player1Turn){
     currentscore2 = 0
   }
-
+  
   currents1.innerHTML = `${currentscore1}`
   currents2.innerHTML = `${currentscore2}`
   
@@ -80,6 +98,16 @@ function displayRollDice() {
   } else {
     player2.style.fontWeight = "lighter"
   }
+  if(player1Turn){
+    icon4.style.display = "inline-block"
+  } else {
+    icon4.style.display = "none"
+  }
+  if(player2Turn){
+    icon5.style.display = "inline-block"
+  } else {
+    icon5.style.display = "none"
+  }
 }
 
 //Cliquer que le bouton hold pour envoyer les points du current score au global score;
@@ -99,7 +127,7 @@ function displayGlobalScore(){
   } else if (pressHold && player1Turn){
     player1Turn = false
   }
-
+  
   if (pressHold && player2Turn){
     currentscore2 = 0
   } else if(pressHold && player2Turn){
@@ -114,8 +142,13 @@ function displayGlobalScore(){
     player1Turn = true
   }
   
+  //Le premier joueur qui atteint 100 POINTS sur le global score gagne le jeu;
+  if(globalscore1 >= 100){
+    alert('Le joueur 1 gagne la partie')
+  } else if(globalscore2 >= 100){
+    alert('Le joueur 2 gagne la partie')
+  }
   
   score1.innerHTML = `${globalscore1}`
   score2.innerHTML = `${globalscore2}`
 }
-//Le premier joueur qui atteint 100 POINTS sur le global score gagne le jeu;

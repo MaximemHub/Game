@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <ion-grid>
+      <ion-row class="ion-padding-top">
+        <ion-col size="4" class="left ion-margin-start">
+          <div class="ion-text-center">
+            <p class="p1">PLAYER 1</p>
+            <ion-icon class="icon4" name="ellipse"></ion-icon>
+        <div class="score1"></div>
+        <div class="currentscore1">
+          <p>CURRENT</p>
+          <div class="displaycurrentscore1"></div>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col class="center">
+      <div class="ion-text-center">
+        <ion-icon class="icon1" name="add-circle-outline"></ion-icon>
+        <p class="newgame">NEW GAME</p>
+      </div>
+      <div class="rollresult"></div>
+      <div class="ion-text-center">
+        <ion-icon class="icon2" name="sync-outline"></ion-icon>
+        <span class="rolldice">ROLL DICE</span>
+      </div>
+      <div class="ion-text-center">
+        <ion-icon class="icon3" name="share-outline"></ion-icon>
+        <p  class="hold">HOLD</p>
+      </div>
+    </ion-col>
+    <ion-col size="4" class="right ion-margin-end">
+      <div class="ion-text-center">
+        <ion-icon class="icon5" name="ellipse"></ion-icon>
+        <p class="p2">PLAYER 2</p>
+        <div class="score2"></div>
+        <div class="currentscore2">
+          <p>CURRENT</p>
+          <div class="displaycurrentscore2"></div>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
   
+  <script src="roll.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 </body>
 </html>

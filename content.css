@@ -3,21 +3,70 @@
   width: 95%;
   height: 95%;
   margin: auto;
-  margin-top: 20px;
-  box-shadow: 3px 3px 15px gray;
+  margin-top: 30px;
+  box-shadow: 5px 5px 20px gray;
 }
 
-.p1{
-  background-color: rgb(245, 245, 245);
-  width: 50%;
-  height: 100%;
-  float: left;
+.left, .center, .right{
+  background: rgb(241, 241, 241);
 }
 
-.p2{
-  background-color:white;
-  width: 50%;
-  height: 100%;
-  margin-left: 50%;
+ion-col{
+  height: 890px;
 }
+
+.p1, .p2{
+  margin-top: 200px;
+  font-size: 60px;
+  font-weight: 100;
+  display: inline-block;
+}
+
+.newgame{
+  display: inline-block;
+}
+
+.rolldice{
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.hold{
+  display: inline-block;
+}
+
+.rollresult{
+  width: 150px;
+  height: 150px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  box-shadow: 2px 2px 12px gray;
+  text-align: center;
+}
+
+.score1, .score2{
+  font-size: 80px;
+  font-weight: 300;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.currentscore1, .currentscore2{
+  background: rgb(255, 101, 101);
+  width: 150px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+
+
+
 
