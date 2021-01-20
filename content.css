@@ -53,6 +53,7 @@ ion-col{
   height: 150px;
   margin-left: auto;
   margin-right: auto;
+  color: rgb(255, 101, 101);
 }
 
 .currentscore1, .currentscore2{
